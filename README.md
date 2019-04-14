@@ -1,6 +1,6 @@
 # Back-end 
 
-## !!!WARN: All developmet should be done in doecker container
+## !!!WARN: All developmet should be done inside docker container
 
 ## Development
 
@@ -9,7 +9,7 @@
 * `docker-compose run api-dev`
 * Development database: `dcent-dev`, user: `postgres`, password: `pwd1234`
 * Test database: `dcent-test`, user: `postgres`, password: `pwd1234`
-* run `sql/crateTables.sql` for both database. For development run `sql/insertProducts.sql`
+* run `sql/crateTables.sql` for both databases. For development run `sql/insertProducts.sql`
 
 ### Service development
 

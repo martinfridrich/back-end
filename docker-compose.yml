@@ -17,6 +17,6 @@ services:
     image: postgres:11
     network_mode: host
     environment:
-      POSTGRES_USER: user1
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pwd1234
   

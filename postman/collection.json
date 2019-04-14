@@ -1,0 +1,106 @@
+{
+	"variables": [],
+	"info": {
+		"name": "dcent",
+		"_postman_id": "98292d0d-2e2f-fc55-548f-e0421a8c1397",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "healthz",
+			"request": {
+				"url": "http://127.0.0.1:3000/healthz",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list products",
+			"request": {
+				"url": "http://127.0.0.1:3000/v1/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "get all products"
+			},
+			"response": []
+		},
+		{
+			"name": "get shopping cart",
+			"request": {
+				"url": "http://127.0.0.1:3000/v1/carts/46",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create new shopping cart",
+			"request": {
+				"url": "http://127.0.0.1:3000/v1/carts/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"id\": 2,\n\t\"amount\": 2,\n\t\"sumPrice\": 20\n}\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update existing cart",
+			"request": {
+				"url": "http://127.0.0.1:3000/v1/carts/46",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"id\": 2,\n\t\"amount\": 2,\n\t\"sumPrice\": 20\n},\n{\n\t\"id\": 4,\n\t\"amount\": 1,\n\t\"sumPrice\": 25.20\n}\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create order",
+			"request": {
+				"url": "http://127.0.0.1:3000/v1/orders/carts/46",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "list orders",
+			"request": {
+				"url": "http://127.0.0.1:3000/v1/orders",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

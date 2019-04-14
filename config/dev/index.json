@@ -1,0 +1,8 @@
+{
+  "database": {
+    "user": "postgres",
+    "host": "127.0.0.1",
+    "database": "dcent-dev",
+    "port": 5432
+  }
+}
